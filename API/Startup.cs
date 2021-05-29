@@ -34,27 +34,6 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            var name = "yo";
-
-            if(name.isNullOrEmpty()) {
-                
-            }
-
-            var list = new List<string>();
-            list.Add("1");
-            list.Add("2");
-
-            list.foreachIndex ((title, index) => {
-                title index
-            });
-
-            
-            var list1 = new List<int>();
-            list1.Add(1);
-            list1.Add(2);
-
-            list1.fo
             services.AddApplicationService(_config);
             services.AddControllers();
             services.AddCors();
